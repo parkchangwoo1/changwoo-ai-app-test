@@ -1,0 +1,16 @@
+# 기본: Git이 텍스트 파일을 감지해서 정규화, 저장소에는 LF로 저장
+* text=auto eol=lf
+
+# 윈도우에서만 의미 있는 스크립트는 CRLF를 허용/강제할 수도 있음
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 바이너리는 줄바꿈 변환 금지
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.woff binary
+*.woff2 binary

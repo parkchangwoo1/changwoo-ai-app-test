@@ -1,0 +1,12 @@
+- **TypeScript만 사용**, `any` 금지(불가피하면 `unknown`)
+- 타입 추론 가능하면 명시 타입 생략
+- `interface`는 객체/Props, `type`은 union/intersection
+- 함수 규칙
+  - 컴포넌트/유틸: `function`
+  - 콜백/핸들러: 화살표 함수
+  - 최상위 함수(유틸/컴포넌트 외)는 **반환 타입 명시**
+- Import 순서: (1) React/라이브러리 (2) `@/` (3) 상대경로 (4) type import
+- 네이밍: 컴포넌트 PascalCase, 훅 `useX`, 핸들러 `handleX`, Props 콜백 `onX`
+- 컴포넌트 내부 순서: hooks → derived(useMemo) → effects → handlers → early returns → render → styles
+- 중첩 삼항 금지 (조건 많으면 if/else 또는 switch)
+- useEffect 최소화, 파생 상태는 상태로 두지 말 것
