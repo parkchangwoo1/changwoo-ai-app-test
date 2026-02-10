@@ -1,9 +1,9 @@
-import type { Message } from '../types';
-import type { ModelId } from './llm';
-import { streamChat } from './llm';
-import { toolRegistry } from './tools/registry';
-import { getEnabledTools, hasToolsEnabled } from './tools/implementations';
-import type { ToolCall, ToolResult, ToolExecutionState } from './tools/types';
+import type { Message } from '@/entities/message';
+import type { ModelId } from '@/shared/api/models';
+import { streamChat } from './streamChat';
+import { toolRegistry } from '@/shared/api/tools/registry';
+import { getEnabledTools } from '@/shared/api/tools/implementations';
+import type { ToolCall, ToolResult, ToolExecutionState } from '@/shared/api/tools/types';
 
 export interface ToolLoopCallbacks {
   onStart?: () => void;
@@ -14,8 +14,6 @@ export interface ToolLoopCallbacks {
   onComplete?: (fullResponse: string, toolResults?: ToolResult[]) => void;
   onError?: (error: Error) => void;
 }
-
-export { hasToolsEnabled, getEnabledTools };
 
 export async function streamChatWithTools(
   messages: Message[],

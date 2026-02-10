@@ -1,4 +1,4 @@
-import type { Message } from '../types';
+import type { Message } from '@/entities/message';
 import { getTextFromContent } from '@/entities/message';
 
 const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions';
