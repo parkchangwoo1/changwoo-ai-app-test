@@ -1,9 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie';
-import type { Conversation, Project } from '@/shared/types';
 
 export interface AppDatabase extends Dexie {
-  conversations: EntityTable<Conversation, 'id'>;
-  projects: EntityTable<Project, 'id'>;
   keyValue: EntityTable<{ key: string; value: string }, 'key'>;
 }
 

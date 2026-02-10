@@ -5,7 +5,7 @@ import CopyIcon from '@/assets/icons/copy.svg?react';
 import CheckIcon from '@/assets/icons/check.svg?react';
 import LinkIcon from '@/assets/icons/link.svg?react';
 import { CodeBlock, MarkdownContent } from '@/shared/ui';
-import type { Message, SourceReference } from '@/shared/types';
+import type { Message, SourceReference } from '@/entities/message';
 import { getTextFromContent, getImagesFromContent } from '@/entities/message';
 import { HighlightedText, createSearchHighlightPlugin, EMPTY_MATCHES } from '@/features/search-chat';
 import type { SearchMatch } from '@/features/search-chat';

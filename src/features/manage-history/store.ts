@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-import type { Conversation, Message } from '@/shared/types';
+import type { Message } from '@/entities/message';
+import type { Conversation } from '@/entities/conversation';
 import { indexedDBStorage } from '@/shared/lib';
 
 const DEFAULT_MODEL = 'gpt-4o';

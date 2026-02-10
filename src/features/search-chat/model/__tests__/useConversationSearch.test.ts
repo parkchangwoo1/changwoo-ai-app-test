@@ -1,7 +1,7 @@
 import { renderHook, act, waitFor } from '@testing-library/react';
 import { useConversationSearch } from '../useConversationSearch';
 import { useChatStore } from '@/features/manage-history';
-import type { Conversation } from '@/shared/types';
+import type { Conversation } from '@/entities/conversation';
 
 // Mock dependencies
 const mockNavigate = jest.fn();

@@ -1,9 +1,9 @@
 import { useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useChatStore } from '@/features/manage-history';
-import { useDebouncedValue } from '@/shared/lib';
+import { useDebouncedValue } from '@/shared/hooks';
 import { getTextFromContent } from '@/entities/message';
-import type { Conversation } from '@/shared/types';
+import type { Conversation } from '@/entities/conversation';
 
 export function useConversationSearch() {
   const navigate = useNavigate();

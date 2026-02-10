@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-import type { Project } from '@/shared/types';
+import type { Project } from '@/entities/project';
 import { indexedDBStorage } from '@/shared/lib';
 
 interface ProjectsState {

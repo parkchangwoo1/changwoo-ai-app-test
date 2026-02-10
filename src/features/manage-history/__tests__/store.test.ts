@@ -1,6 +1,6 @@
 import { act } from '@testing-library/react';
 import { useChatStore } from '../store';
-import type { Message } from '@/shared/types';
+import type { Message } from '@/entities/message';
 
 // IndexedDB 스토리지 모킹
 jest.mock('@/shared/lib', () => ({

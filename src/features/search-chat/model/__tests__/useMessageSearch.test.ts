@@ -1,6 +1,6 @@
 import { renderHook, act, waitFor } from '@testing-library/react';
 import { useMessageSearch } from '../useMessageSearch';
-import type { Message } from '@/shared/types';
+import type { Message } from '@/entities/message';
 
 describe('useMessageSearch', () => {
   const mockMessages: Message[] = [

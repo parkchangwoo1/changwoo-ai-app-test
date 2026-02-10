@@ -6,7 +6,8 @@ import SettingIcon from '@/assets/icons/setting.svg?react';
 import TrashBinIcon from '@/assets/icons/trashBin.svg?react';
 import { DropdownMenu, type DropdownMenuItem } from '@/shared/ui';
 import { useDropdownMenu } from '@/shared/hooks';
-import type { Project, Conversation } from '@/shared/types';
+import type { Project } from '@/entities/project';
+import type { Conversation } from '@/entities/conversation';
 
 interface ProjectItemProps {
   project: Project;

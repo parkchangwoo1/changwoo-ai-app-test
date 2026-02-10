@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { Settings } from '@/shared/types';
+import type { Settings } from '@/entities/settings';
 
 const DEFAULT_SETTINGS: Settings = {
   globalSystemPrompt: '',

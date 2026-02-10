@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import styled from 'styled-components';
-import type { Conversation } from '@/shared/types';
+import type { Conversation } from '@/entities/conversation';
 import { getTextFromContent } from '@/entities/message';
 
 interface ProjectChatListProps {

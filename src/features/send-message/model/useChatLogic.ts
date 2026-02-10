@@ -3,12 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { useChatStore } from '@/features/manage-history';
 import { useSettingsStore } from '@/features/settings';
 import { useProjectsStore } from '@/features/projects';
-import { streamChat, streamChatWithTools, hasToolsEnabled, generateTitle } from '@/shared/api';
+import { streamChat, streamChatWithTools, generateTitle } from '../api';
+import { hasToolsEnabled } from '@/shared/api';
 import { prepareSummarizedMessages } from './contextPreparer';
 import type { ModelId, ToolExecutionState, ToolResult } from '@/shared/api';
-import type { Message, SourceReference } from '@/shared/types';
+import type { Message, SourceReference } from '@/entities/message';
 import type { MessageContent } from '@/entities/message';
-import { combineSystemPrompts, type ImageFile } from '@/shared/lib';
+import type { ImageFile } from '@/shared/lib';
+import { combineSystemPrompts } from '../lib/combineSystemPrompts';
 
 export function useChatLogic(onUserMessageSent?: () => void) {
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useProjectsStore } from '../store';
-import type { Project } from '@/shared/types';
+import type { Project } from '@/entities/project';
 
 interface ProjectFormData {
   name: string;

@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
-import type { Message } from '@/shared/types';
+import type { Message } from '@/entities/message';
 import { getTextFromContent } from '@/entities/message';
-import { useDebouncedValue } from '@/shared/lib';
+import { useDebouncedValue } from '@/shared/hooks';
 
 export interface SearchMatch {
   messageId: string;

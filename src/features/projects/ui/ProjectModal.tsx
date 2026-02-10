@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Modal } from '@/shared/ui';
 import { useProjectModal } from '../model/useProjectModal';
-import type { Project } from '@/shared/types';
+import type { Project } from '@/entities/project';
 
 interface ProjectFormProps {
   project: Project | null | undefined;

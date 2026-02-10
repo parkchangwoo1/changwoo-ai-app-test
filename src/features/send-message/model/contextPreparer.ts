@@ -1,5 +1,5 @@
-import { generateConversationSummary } from '@/shared/api';
-import type { Message } from '@/shared/types';
+import { generateConversationSummary } from '../api';
+import type { Message } from '@/entities/message';
 
 const SUMMARIZE_THRESHOLD = 30;
 const RECENT_KEEP = 10;

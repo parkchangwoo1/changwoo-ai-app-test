@@ -5,7 +5,7 @@ import ThreeDotsIcon from '@/assets/icons/3dots.svg?react';
 import SettingIcon from '@/assets/icons/setting.svg?react';
 import TrashBinIcon from '@/assets/icons/trashBin.svg?react';
 import { DropdownMenu, MobileMenuButton, type DropdownMenuItem } from '@/shared/ui';
-import type { Project } from '@/shared/types';
+import type { Project } from '@/entities/project';
 
 interface ProjectHeaderProps {
   project: Project;
