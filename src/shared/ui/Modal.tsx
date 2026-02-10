@@ -2,7 +2,7 @@ import { useEffect, useRef, useId, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import CloseIcon from '@/assets/icons/close.svg?react';
 import styled, { keyframes } from 'styled-components';
-import { useEventCallback } from '@/shared/lib';
+import { useEventCallback } from '@/shared/hooks';
 
 interface ModalProps {
   isOpen: boolean;

@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect } from 'react';
 
-import type { Message } from '@/shared/types';
+import type { Message } from '@/entities/message';
 
 const SPACER_GAP = 64;
 

@@ -3,11 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { useChatStore } from '@/features/manage-history';
 import { useProjectsStore } from '@/features/projects';
 import { useSettingsStore } from '@/features/settings';
-import { streamChat, generateTitle } from '@/shared/api';
+import { streamChat, generateTitle } from '../api';
 import type { ModelId } from '@/shared/api';
-import type { Message, Conversation } from '@/shared/types';
+import type { Message } from '@/entities/message';
+import type { Conversation } from '@/entities/conversation';
 import type { MessageContent } from '@/entities/message';
-import { combineSystemPrompts, type ImageFile } from '@/shared/lib';
+import type { ImageFile } from '@/shared/lib';
+import { combineSystemPrompts } from '../lib/combineSystemPrompts';
 
 export function useProjectViewLogic() {
   const navigate = useNavigate();

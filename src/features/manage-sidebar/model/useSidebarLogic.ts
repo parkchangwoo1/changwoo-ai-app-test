@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useChatStore } from '@/features/manage-history';
 import { useProjectsStore } from '@/features/projects';
 import { useToast } from '@/shared/ui';
-import type { Project, Conversation } from '@/shared/types';
+import type { Project } from '@/entities/project';
+import type { Conversation } from '@/entities/conversation';
 
 interface DeleteConfirm {
   type: 'chat' | 'project' | 'projectChat';

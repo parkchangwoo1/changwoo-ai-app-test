@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import type { SourceReference } from '@/shared/types';
+import type { SourceReference } from '@/entities/message';
 
 interface SourceBubbleProps {
   source?: SourceReference;

@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
 import type { SearchMatch } from '@/features/search-chat';
-import type { Message } from '@/shared/types';
+import type { Message } from '@/entities/message';
 
 interface ScrollMatchMarkersProps {
   matches: SearchMatch[];

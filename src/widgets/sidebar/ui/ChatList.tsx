@@ -3,7 +3,7 @@ import ThreeDotsIcon from '@/assets/icons/3dots.svg?react';
 import TrashBinIcon from '@/assets/icons/trashBin.svg?react';
 import { DropdownMenu, type DropdownMenuItem } from '@/shared/ui';
 import { useDropdownMenu } from '@/shared/hooks';
-import type { Conversation } from '@/shared/types';
+import type { Conversation } from '@/entities/conversation';
 
 interface ChatListProps {
   conversations: Conversation[];
